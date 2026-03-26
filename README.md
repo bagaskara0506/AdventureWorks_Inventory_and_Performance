@@ -1,6 +1,6 @@
 # AdventureWorks: Inventory & Product Performance Analysis
 
-Proyek ini berfokus pada evaluasi performa penjualan produk dan analisis kesehatan inventaris secara end-to-end, mulai dari ekstraksi data mentah hingga visualisasi interaktif.
+Proyek ini berfokus pada evaluasi performa penjualan produk dan analisis kesehatan persediaan secara end-to-end, Mulai dari ekstraksi data mentah hingga visualisasi interaktif diakhiri dengan analisis diagnostik dan prediktif (RCA, Corrective, Preventive).
 
 **Live Interactive Dashboard:** [View on Tableau Public](https://public.tableau.com/app/profile/satria.bagaskara4685/viz/AdventureWorksInventoryProductPerformanceDashboard/DashboardAdventureWorks-Analysis)  
 **Full Project Repository:** [GitHub Repository](https://github.com/bagaskara0506/AdventureWorks_Inventory_and_Performance.git)
@@ -9,19 +9,27 @@ Proyek ini berfokus pada evaluasi performa penjualan produk dan analisis kesehat
 
 ## Tools & Technologies
 
+### Proses EDA (Exploratory Data Analysis)
+
 - **Relational Database Management System (RDBMS):** PostgreSQL
 - **Database Management Tool:** pgAdmin 4 (untuk eksekusi DDL, ELT, dan DML)
 - **Business Intelligence & Data Visualization:** Tableau Public 2026.1.0
 - **Version Control:** Git & GitHub
 
+### Proses Diagnostic & Predictive Analytics dengan Python
+
+- Library : pandas, matplotlib, & seaborn
+- IDE : VSCode (Ekstensi Jupyter by Microsoft)
+
 ---
 
 ## Project Folder Structure
 
-- **AdventureWorks_SupplyChain_Analysis > data/Raw_Data :** Dataset mentah asli berformat CSV yang diunduh dari sumber.
-- **AdventureWorks_SupplyChain_Analysis > data/Result_Data_Query :** Hasil ekstraksi DML/Query berformat CSV yang sudah bersih dan siap untuk divisualisasikan.
-- **AdventureWorks_SupplyChain_Analysis > dashboards/tableau :** Direktori penyimpanan aset visualisasi seperti gambar hasil export dashboard.
-- **AdventureWorks_SupplyChain_Analysis > README.md :** Dokumentasi komprehensif dari keseluruhan proyek ini.
+- **AdventureWorks_Inventory_and_Performance > data/Raw_Data :** Dataset mentah asli berformat CSV yang diunduh dari sumber.
+- **AdventureWorks_Inventory_and_Performance > data/Result_Data_Query :** Hasil ekstraksi DML/Query berformat CSV yang sudah bersih dan siap untuk divisualisasikan.
+- **AdventureWorks_Inventory_and_Performance > dashboards/tableau :** Direktori penyimpanan aset visualisasi seperti gambar hasil export dashboard di tableau.
+- **AdventureWorks_Inventory_and_Performance > README.md :** Dokumentasi komprehensif dari keseluruhan proyek ini.
+- **AdventureWorks_Inventory_and_Performance > notebooks :** Direktori penyimpanan file python jupyter (.ipynb) Proses Diagnostic & Predictive Analytics dengan Python
 
 ---
 
@@ -157,3 +165,13 @@ Keempat visualisasi di atas digabungkan menjadi satu kesatuan dashboard yang utu
 
 Berikut adalah hasil akhir dari dashboard yang merangkum keseluruhan analisis bisnis:
 ![Dashboard AdventureWorks Analysis](dashboards/tableau/Dashboard_AdventureWorks_Analysis.png)
+
+---
+
+## Diagnostic & Predictive Analytics (Python)
+
+Sebagai langkah lanjutan dari visualisasi deskriptif di Tableau, proyek ini akan dilanjutkan ke tahap analisis tingkat lanjut menggunakan Python (Pandas, Matplotlib, Seaborn). Tahap ini berfokus pada Root Cause Analysis (RCA) dengan dua tujuan utama:
+
+1. **Diagnostic Analytics:** Menggali akar masalah (penyebab) di balik anomali dan metrik yang ditemukan pada **dashboard** Tableau. (Contoh: Menguji korelasi statistik antara lamanya waktu barang mengendap di gudang dengan tingginya tingkat pengembalian/retur produk).
+2. **Predictive Analytics:** Menggunakan pola penyebab dari data historis untuk mengantisipasi tren di masa depan. (Contoh: Memprediksi volume penjualan dan kebutuhan stok di musim berikutnya guna mencegah penumpukan _inventory_ atau kehabisan stok).
+   _(Proses analisis Python ini dapat dilihat di dalam direktori `notebooks/` pada repositori ini)._
