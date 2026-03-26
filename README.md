@@ -3,7 +3,7 @@
 Proyek ini berfokus pada evaluasi performa penjualan produk dan analisis kesehatan inventaris secara end-to-end, mulai dari ekstraksi data mentah hingga visualisasi interaktif.
 
 **Live Interactive Dashboard:** [View on Tableau Public](https://public.tableau.com/app/profile/satria.bagaskara4685/viz/AdventureWorksInventoryProductPerformanceDashboard/DashboardAdventureWorks-Analysis)  
-**Full Project Repository:** [GitHub Repository](https://github.com/bagaskara0506/AdventureWorks_SupplyChain_Analysis.git)
+**Full Project Repository:** [GitHub Repository](https://github.com/bagaskara0506/AdventureWorks_Inventory_and_Performance.git)
 
 ---
 
